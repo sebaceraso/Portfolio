@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio Sebastian Ceraso</title>
     <link rel="stylesheet" href="./css/normalized.css" />
     <link rel="stylesheet" href="./css/estilos.css" />
     <link
@@ -32,11 +32,13 @@
               >Contactame ahora</a
             >
             <a
-              href="#"
+              href="#presentation"
               class="nav__items backInRight animate__animated animate__backInLeft"
               >Sobre mi</a
             >
-            <a href="#" class="nav__items animate__animated animate__backInLeft"
+            <a
+              href="#projects"
+              class="nav__items animate__animated animate__backInLeft"
               >Proyectos</a
             >
           </nav>
@@ -44,7 +46,7 @@
           <section class="hero__container">
             <div class="hero__texts">
               <h1 class="hero__title">
-                Bienvenido a mi portfolio de Developer Front End
+                Bienvenido a mi portfolio de Developer FullStack
               </h1>
               <h2 class="hero__subtitle">de una IDEA => a una PAGINA WEB</h2>
               <a
@@ -78,7 +80,7 @@
     </header>
 
     <main>
-      <section id="presentation1">
+      <section id="presentation">
         <div class="presentation container">
           <img
             src="./assets/Foto cv.jpg"
@@ -86,13 +88,26 @@
             class="presentation__picture"
           />
           <h2 class="subtitle">Hola!! soy Sebastian Agustin Ceraso</h2>
-          <p class="presentation__copy">
-            Soy de Argentina, tengo 31 años, me recibi como Developer Full Stack
-            en CoderHouse. Tengo conocimiento en HTML, CSS, JAVASCRIPT, REACT
-            JS, NODE JS Y EXPRESS. Me gusta mucho el diseño y desarrollo web,
-            por lo que estoy practicando para en un futuro trabajar para alguna
-            empresa.
-          </p>
+          <ul class="presentation__copy">
+            <li>
+              Soy de Argentina, tengo 31 años y me recibi como Developer Full
+              Stack en CoderHouse en Septiembre del 2023.
+            </li>
+            <li>
+              Tengo conocimiento en HTML, CSS, JAVASCRIPT, REACT JS, NODE JS Y
+              EXPRESS. Proximamente estare haciendo un curso del lenguaje
+              Typescript y SEO.
+            </li>
+            <li>
+              Me gusta el diseño web, crear una aplicacion a a partir del diseño
+              de un UX/UI y trabajar conjuntamente.
+            </li>
+            <li>
+              Mi meta este año (2024) es ser parte de una empresa y poder
+              brindarle mis conocimientos y habilidades. Quiero crecer como
+              profesional en esta area.
+            </li>
+          </ul>
           <a
             href="https://wa.me/5491168571042?text=Hola Seba, quisiera hablar contigo!!Espero tu mensaje..."
             class="presentation__cta"
@@ -101,84 +116,76 @@
         </div>
       </section>
 
-      <section id="about1">
+      <section id="about">
         <div class="about container">
+          <h2 class="subtitle">Mis habilidades</h2>
           <div class="about__texts wow animate__animated animate__backInUp">
-            <!--ATAJO DE TECLADO: escribir:  .about__texts   y te arma el div con esa clase-->
-            <h2 class="subtitle">Mis habilidades</h2>
-            <p class="about__paragraph">
-              HTML 5 Y CSS 3, maquetado, wireframe y sketch, Bootstrap,
-              Responsive Design, GIT, GIT HUB, subida de la pagina web a un
-              servidor.
-            </p>
+            <figure class="about__img wow animate__animated animate__backInUp">
+              <img
+                src="./assets/pc5.jpg"
+                alt="html css"
+                class="about__picture"
+              />
+            </figure>
+            <ul class="about__paragraph">
+              <li>HTML 5</li>
+              <li>CSS 3</li>
+              <li>Maquetado, wireframe y sketch</li>
+              <li>Bootstrap</li>
+              <li>Responsive Design</li>
+              <li>GIT y GIT HUB</li>
+              <li>Subida de la pagina web a un servidor:Filezilla, Glitch</li>
+            </ul>
           </div>
-
-          <figure class="about__img wow animate__animated animate__backInUp">
-            <img src="./assets/pc5.jpg" alt="html css" class="about__picture" />
-          </figure>
-
-          <figure
-            class="about__img about__img--left wow animate__animated animate__backInDown"
-          >
-            <img src="./assets/pc6.png" alt="js react" class="about__picture" />
-          </figure>
 
           <div class="about__texts wow animate__animated animate__backInDown">
             <p class="about__paragraph">
-              JAVASCRIPT y REACT, en el curso de JS se desarrollo un video juego
-              (TATETI), con el uso de condicionales y ciclos, se le agrego el
-              diseño para hacerlo mas intereactivo y visible. Al cargar los
-              jugadores los nombres se van guardando en el local storage. En
-              REACT se desarrollo un ecommerce de smartwacth donde se pedia las
-              imagenes y precios desde Firestore. Ademas se desarrollo un
-              carrito de compras.
+              En el curso de JAVASCRIPT se desarrollo un video juego (TATETI),
+              con el uso de condicionales y ciclos, se le agrego el diseño para
+              hacerlo mas intereactivo y visible. Al cargar los jugadores los
+              nombres se van guardando en el local storage. <br />
+              En el curso de REACT se desarrollo un ecommerce de relojes
+              smartwatch donde se pedia las imagenes y precios desde Firestore.
+              Ademas se desarrollo un carrito de compras.
             </p>
+            <figure
+              class="about__img about__img--left wow animate__animated animate__backInDown"
+            >
+              <img
+                src="./assets/pc6.png"
+                alt="js react"
+                class="about__picture"
+              />
+            </figure>
           </div>
         </div>
       </section>
 
-      <section id="projects1">
+      <section id="projects">
         <div
           class="projects container wow animate__animated animate__backInRight"
         >
           <h2 class="subtitle">Mis Proyectos</h2>
-          <div class="projects__grid">
+          <div class="projects__flex">
             <article class="projects__item">
               <img src="./assets/tate.png" alt="Tateti" />
-              <div class="projects__hover">
-                <h2 class="projects__title">Tateti</h2>
-                <i class="far fa-file-alt projects_icon"></i>
+              <div class="projects__item__content">
+                <a href="" class="projects__title">Tateti</a>
+                <p>Este proyecto es del curso de Javascript.</p>
               </div>
             </article>
-
-            <article class="projects__item">
-              <img src="./assets/img2.png" alt="preparacion fisica de futbol" />
-              <div class="projects__hover">
-                <h2 class="projects__title">Ppreparacion fisica de futbol</h2>
-                <i class="far fa-file-alt projects_icon"></i>
-              </div>
-            </article>
-
             <article class="projects__item">
               <img src="./assets/img3.jpg" alt="tienda smartwacth" />
-              <div class="projects__hover">
-                <h2 class="projects__title">Tienda smartwacth</h2>
-                <i class="far fa-file-alt projects_icon"></i>
-              </div>
-            </article>
-
-            <article class="projects__item">
-              <img src="./assets/img4.jpg" alt="clima" />
-              <div class="projects__hover">
-                <h2 class="projects__title">Clima</h2>
-                <i class="far fa-file-alt projects_icon"></i>
+              <div class="projects__item__content">
+                <a href="" class="projects__title">Tienda smartwacth</a>
+                <p>Este proyecto es del curso de React.</p>
               </div>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="testimony1">
+      <section id="testimony">
         <div
           class="testimony container wow animate__animated animate__backInLeft"
         >
@@ -226,16 +233,14 @@
       <div class="container footer__grid">
         <nav class="nav nav--footer">
           <a class="nav__items nav__items--footer" href="#home">Inicio</a>
-          <a class="nav__items nav__items--footer" href="#presentation1"
+          <a class="nav__items nav__items--footer" href="#presentation"
             >Sobre mi</a
           >
-          <a class="nav__items nav__items--footer" href="#about1"
-            >Habilidades</a
-          >
-          <a class="nav__items nav__items--footer" href="#projects1"
+          <a class="nav__items nav__items--footer" href="#about">Habilidades</a>
+          <a class="nav__items nav__items--footer" href="#projects"
             >Proyectos</a
           >
-          <a class="nav__items nav__items--footer" href="#testimony1"
+          <a class="nav__items nav__items--footer" href="#testimony"
             >Referencias</a
           >
         </nav>
