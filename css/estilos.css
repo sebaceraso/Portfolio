@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
 
 :root {
-  --background: linear-gradient(135deg, #667eea7e 0%, #764ba298 100%);
+  --background: linear-gradient(135deg, #122a9e7e 0%, #171e61 100%);
   --color-primary: #667;
   --color-secondary: #764;
   --boton-padding: 20px 40px;
+  --color-third: #0b1361;
 }
 
 /*Aca estoy dandole a los colores un nombre de variable para llamarlos en otros elementos de forma mas fail*/
@@ -128,8 +129,7 @@ body {
   margin-top: 20px;
   animation: mostrarH2 6s ease-in forwards;
   font-size: 2.3em;
-  color: #fff;
-  text-decoration: underline;
+  color: #f7df0f;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -155,7 +155,6 @@ body {
   padding: var(--boton-padding);
   color: var(--color-primary);
   text-decoration: none;
-  border-radius: 40px;
   font-size: 1em;
   font-weight: bold;
   margin-top: 40px;
@@ -316,7 +315,7 @@ img {
 .testimony__item {
   width: 95%;
   margin: 0 auto;
-  background: var(--color-secondary);
+  background: var(--background);
   box-shadow: 0 8px 10px rgba(66, 66, 66, 0.5);
   border-radius: 7px;
   padding: 30px 25px;
@@ -358,7 +357,7 @@ img {
 
 /*Footer*/
 .footer {
-  background: var(--color-primary);
+  background: var(--background);
 }
 
 .footer__grid {
