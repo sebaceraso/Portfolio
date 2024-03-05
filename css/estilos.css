@@ -3,7 +3,7 @@
 :root {
   --background: linear-gradient(135deg, #122a9e7e 0%, #171e61 100%);
   --color-primary: #667;
-  --color-secondary: #764;
+  --color-secondary: #171e61;
   --boton-padding: 20px 40px;
   --color-third: #0b1361;
 }
@@ -53,11 +53,6 @@ body {
   align-items: center;
 }
 
-.nav--footer {
-  font-weight: 300;
-  justify-content: flex-start;
-}
-
 .nav__items {
   color: #fff;
   text-decoration: none;
@@ -70,16 +65,6 @@ body {
 .nav__items:hover {
   color: var(--color-primary);
   background-color: #fff;
-}
-
-.nav__items--cta {
-  border: 1px solid #fff;
-}
-
-.nav__items--footer {
-  padding: 10px;
-  color: #fff;
-  border: #fff 1px solid;
 }
 
 .hero__container {
@@ -356,23 +341,43 @@ img {
 }
 
 /*Footer*/
-.footer {
-  background: var(--background);
-}
-
 .footer__grid {
   display: grid;
   grid-template-columns: 4fr 2fr;
   gap: 20px;
   align-items: center;
+  background: var(--background);
+  padding: 20px;
+}
+
+.nav__footer {
+  display: flex;
+  height: 70px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15px;
+}
+.nav__footer__items {
+  padding: 10px;
+  color: #fff;
+  white-space: nowrap;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: inherit;
+  padding: 10px 15px;
+}
+
+.nav__footer__items:hover {
+  color: var(--color-primary);
+  background-color: #fff;
 }
 
 .footer__title {
   font-weight: 400;
   color: #fff;
   font-size: 2rem;
-  margin-bottom: 30px;
-  text-align: center;
+  margin: 20px;
+  font-family: monospace;
 }
 
 .footer__icons {
@@ -382,9 +387,7 @@ img {
 .whatsapp,
 .email {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: center;
 }
 .whatsapp a,
 .email a {
@@ -401,25 +404,44 @@ img {
   margin-left: 5px;
 }
 
-/* .footer__container-icons {
-  display: inline-block;
-  width: 60px;
-  height: 60px;
-  color: #fff;
-  text-align: center;
-  border: 1px solid #fff;
-  border-radius: 50%;
-} */
-
-/* .footer__icon {
-  color: inherit;
-  font-size: 30px;
-  text-decoration: none;
-} */
-
 /*-------------RESPONSIVE--------------*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 955px) {
+  .testimony__grid {
+    grid-template-columns: 1fr;
+  }
+  .footer__grid {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+  }
+
+  .nav__footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+  }
+  .nav__footer__items {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+  }
+  .footer__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .whatsapp,
+  .email {
+    align-items: center;
+    justify-content: center;
+  }
 }
+
 @media screen and (max-width: 320px) {
 }
