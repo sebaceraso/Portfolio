@@ -287,6 +287,20 @@ img {
   width: 220px;
   margin: 10px;
 }
+.projects__github {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  font-size: 1.2em;
+}
+.projects__github a {
+  padding-left: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--color-primary);
+  font-size: 1.1em;
+}
 
 /*Testimony*/
 
@@ -373,11 +387,9 @@ img {
 }
 
 .footer__title {
-  font-weight: 400;
   color: #fff;
   font-size: 2rem;
   margin: 20px;
-  font-family: monospace;
 }
 
 .footer__icons {
