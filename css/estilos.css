@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap");
 
 :root {
   --background: linear-gradient(135deg, #122a9e7e 0%, #171e61 100%);
@@ -11,13 +11,13 @@
 /*Aca estoy dandole a los colores un nombre de variable para llamarlos en otros elementos de forma mas fail*/
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .hero {
-  height: 500px;
+  height: 90vh;
   background-image: var(--background),
-    url('../assets/florian-olivo-4hbJ-eymZ1o-unsplash.jpg');
+    url("../assets/florian-olivo-4hbJ-eymZ1o-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -28,6 +28,7 @@ body {
 .hero .container {
   padding: 0;
 }
+
 .container {
   width: 90%;
   margin: 0 auto;
@@ -110,12 +111,13 @@ body {
   overflow: hidden;
   overflow-wrap: break-word;
 }
+
 .hero__subtitle {
   margin-top: 20px;
   animation: mostrarH2 6s ease-in forwards;
   font-size: 2.3em;
   color: #f7df0f;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 @keyframes mostrarH2 {
@@ -128,6 +130,7 @@ body {
     opacity: 0;
     visibility: hidden;
   }
+
   100% {
     opacity: 1;
     visibility: visible;
@@ -212,9 +215,11 @@ main {
   color: #fff;
   background-color: var(--color-secondary);
 }
+
 .about {
   border-bottom: var(--color-primary) solid;
 }
+
 .about .container {
   width: 90%;
   display: flex;
@@ -223,6 +228,7 @@ main {
   align-items: center;
   /*centro todo verticalmente*/
 }
+
 .about__texts {
   display: flex;
   flex-direction: row;
@@ -263,12 +269,14 @@ main {
   width: 100%;
   margin: 20px;
 }
+
 .projects__title {
   text-decoration: none;
   font-size: 1.5em;
   color: var(--color-primary);
   font-weight: 700;
 }
+
 .projects__item__content {
   display: flex;
   flex-direction: column;
@@ -287,6 +295,7 @@ img {
   width: 220px;
   margin: 10px;
 }
+
 .projects__github {
   display: flex;
   justify-content: center;
@@ -294,6 +303,7 @@ img {
   margin-top: 30px;
   font-size: 1.2em;
 }
+
 .projects__github a {
   padding-left: 8px;
   text-decoration: none;
@@ -371,6 +381,7 @@ img {
   justify-content: center;
   margin-left: 15px;
 }
+
 .nav__footer__items {
   padding: 10px;
   color: #fff;
@@ -396,11 +407,13 @@ img {
   display: flex;
   flex-direction: column;
 }
+
 .whatsapp,
 .email {
   display: flex;
   align-items: center;
 }
+
 .whatsapp a,
 .email a {
   text-decoration: none;
@@ -411,6 +424,7 @@ img {
   width: 10%;
   margin-left: 5px;
 }
+
 .email img {
   width: 10%;
   margin-left: 5px;
@@ -422,6 +436,7 @@ img {
   .testimony__grid {
     grid-template-columns: 1fr;
   }
+
   .footer__grid {
     position: relative;
     display: flex;
@@ -437,17 +452,20 @@ img {
     align-items: center;
     font-weight: 300;
   }
+
   .nav__footer__items {
     color: #fff;
     text-decoration: none;
     font-size: 1em;
   }
+
   .footer__contact {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
+
   .whatsapp,
   .email {
     align-items: center;
@@ -455,5 +473,105 @@ img {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 768px) {
+  .hero__wave {
+    position: absolute;
+    bottom: 0;
+    /* para que se posiciones pegado al header en la posicion mas baja*/
+    left: 0;
+    width: 100%;
+    height: 100px;
+  }
+
+  main {
+    width: 90%;
+    margin: 0 auto;
+    padding: 80px 0;
+    max-width: 1200px;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about__texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  .presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .testimony {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 220px;
+    margin-top: 10px;
+    font-size: 1.1em;
+  }
+  .hero__title {
+    white-space: pre-wrap;
+    font-size: 2em;
+    width: 100%;
+    font-family: monospace;
+    animation: none;
+    height: auto;
+    border-right: none;
+    text-align: center;
+  }
+  .hero__subtitle {
+    font-size: 2em;
+    text-align: center;
+    animation: none;
+    margin-bottom: 10px;
+  }
+  .hero__cta {
+    position: absolute;
+    bottom: 180px;
+  }
+  .nav__footer {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  main {
+    font-size: 0.8em;
+  }
+  .hero__title {
+    font-size: 1.5em;
+  }
+  .hero__subtitle {
+    white-space: pre-wrap;
+    font-size: 1.5em;
+  }
 }
